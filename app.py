@@ -265,3 +265,5 @@ def update_output_div(date, hour, proy):
 # Run the server
 if __name__ == "__main__":
     app.run(debug=True)
+
+# Se agrega un comentario de parte de Valeria al proyecto de Bryan como validacion del punto 4 del taller
