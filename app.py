@@ -21,9 +21,9 @@ app.config.suppress_callback_exceptions = True
 
 # Load data from csv
 # Load data from csv
-def load_data(ruta,nombre):
+def load_data(ruta,nombre,tipo):
     # Ruta completa del archivo
-    path = f"{ruta}{nombre}"
+    path = f"{ruta}{nombre}{tipo}"
 
     # Carga del archivo
     df = pd.read_csv(path)
@@ -39,9 +39,10 @@ def load_data(ruta,nombre):
 
 # Cargar datos
 ruta="C:/Users/brymy/Documents/dsa_uniandes/taller2/"
-nombre='datos_energia.csv'
+nombre='datos_energia'
+tipo= ".csv"
 
-data = load_data(ruta,nombre)
+data = load_data(ruta,nombre,tipo)
 
 # Graficar serie
 def plot_series(data, initial_date, proy):
