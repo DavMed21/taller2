@@ -1,3 +1,10 @@
+#Instaladores para los paquetes
+
+#pip install dash
+#pip install numpy
+#pip install pandas
+#pip install datetime
+
 import dash
 from dash import dcc
 from dash import html
